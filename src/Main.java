@@ -9,6 +9,15 @@ public class Main {
         frame.setLayout(new BorderLayout());
 
         JPanel mainPanel = new JPanel();
+        JTextArea mainTextArea = new JTextArea();
+        mainTextArea.setText("Bienvenue sur l'application de gestion AirVIP");
+        mainTextArea.setEditable(false);
+        mainTextArea.setFont(new Font("Serif", Font.ITALIC, 32));
+        mainTextArea.setForeground(Color.WHITE);
+        mainTextArea.setBackground(Color.DARK_GRAY);
+        mainTextArea.setFocusable(false);
+        mainPanel.add(mainTextArea);
+        mainPanel.setBackground(Color.DARK_GRAY);
         frame.add(mainPanel, BorderLayout.CENTER);
 
         frame.setSize(new Dimension(1280,720));
