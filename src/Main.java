@@ -1,3 +1,5 @@
+import pages.AeroportPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -20,7 +22,9 @@ public class Main {
         mainPanel.setBackground(Color.DARK_GRAY);
         frame.add(mainPanel, BorderLayout.CENTER);
 
-        frame.setSize(new Dimension(1280,720));
+        AeroportPanel aeroPanel = new AeroportPanel(frame);
+
+        frame.setSize(new Dimension(800,600));
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
