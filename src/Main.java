@@ -22,7 +22,8 @@ public class Main {
         mainPanel.setBackground(Color.DARK_GRAY);
         frame.add(mainPanel, BorderLayout.CENTER);
 
-        AeroportPanel aeroPanel = new AeroportPanel(frame);
+        // Retirer commentaire pour voir page AjoutAeroport
+        //AeroportPanel aeroPanel = new AeroportPanel(frame);
 
         frame.setSize(new Dimension(800,600));
 
