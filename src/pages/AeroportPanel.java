@@ -23,15 +23,22 @@ public class AeroportPanel {
         gbc = new GridBagConstraints();
 
         labelAero = new JLabel("Nouvel Aéroport");
+        labelAero.setForeground(Color.WHITE);
+        labelAero.setFont(new Font("Serif", Font.BOLD, 24));
         labelVille = new JLabel("Ville : ");
+        labelVille.setForeground(Color.WHITE);
         txtVille = new JTextField(20);
         labelPays = new JLabel("Pays : ");
+        labelPays.setForeground(Color.WHITE);
         txtPays = new JTextField(20);
         labelDistanceMTL = new JLabel("Distance de Montréal (km) : ");
+        labelDistanceMTL.setForeground(Color.WHITE);
         txtDistanceMTL = new JTextField(20);
         btnConfirm = new JButton("Confirmer");
         btnCancel = new JButton("Annuler");
 
+        btnConfirm.setBackground(Color.GREEN);
+        btnCancel.setBackground(Color.RED);
         btnConfirm.setActionCommand("confirm");
         btnCancel.setActionCommand("cancel");
 
@@ -99,6 +106,8 @@ public class AeroportPanel {
 //        panelAjout.add(btnConfirm);
 //        panelAjout.add(btnCancel);
 
+        panelAjout.setBackground(Color.DARK_GRAY);
+
         frame.add(panelAjout);
     }
 
@@ -107,7 +116,7 @@ public class AeroportPanel {
             // Ferme le panel et envoyer les données
         }
         if ("cancel".equals(event.getActionCommand())){
-            // Fermer le panel
+            // Fermer le panel, oublie les données
         }
     }
 }
