@@ -12,6 +12,12 @@ public class GestionnaireVolsdisponibles {
     //Créer vols / annuler vols
 
 
+    // verifier connexion
+
+    public boolean VerifierConnexion () {
+
+
+    }
 
 
 
